@@ -49,20 +49,17 @@ class _ContadorPageState extends State<ContadorPage> {
         FloatingActionButton(
             child: Icon(Icons.remove),
             onPressed: () {
-              _counter--;
-              setState(() {});
+              setState(() => _counter--);
             }),
         FloatingActionButton(
             child: Icon(Icons.exposure_zero),
             onPressed: () {
-              _counter = 0;
-              setState(() {});
+              setState(() => _counter = 0);
             }),
         FloatingActionButton(
             child: Icon(Icons.exposure_plus_2),
             onPressed: () {
-              _counter = _counter + 2;
-              setState(() {});
+              setState(() => _counter = _counter + 2);
             }),
       ],
     );
